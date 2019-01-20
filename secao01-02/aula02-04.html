@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lógica de programação com Javascript</title>
+</head>
+<body>
+    <h1>Lógica de programação com Javascript</h1>
+    <script>
+
+        // var n1 = prompt('Digite um número');
+        // n1 = parseFloat(n1);
+
+        // var n2 = parseFloat(prompt('Digite outro número'));
+
+        // var media = (n1 + n2) / 2;
+
+        // alert(media > 5);
+
+
+        //exemplo media fiap
+
+        //nacs 20% da nota
+
+        //nac1
+        var nac1 = prompt('Digite a nota da primeira NAC');
+        nac1 = parseInt(nac1);
+
+        //nac2
+        var nac2 = parseInt(prompt('Digite a nota da segunda NAC'));
+
+        //media entre as nacs
+        var nacMedia = (nac1 + nac2) / 2;
+
+        //peso nac
+        var nacPeso = nacMedia * 0.2;
+
+        //nota AM
+        var am = parseFloat(prompt('Digite a nota do am'));
+
+        //peso  com nota final
+        var amPeso = am * 0.3;
+
+        //nota ps
+        var ps = parseFloat(prompt('Digite a nota da PS'));
+
+        //peso ps
+        var psPeso = ps * 0.5;
+
+        //media fiap
+        var mediaFiap = nacPeso + amPeso + psPeso;
+
+        //passou ou não
+        alert("Aprovado pou reprovado: " + (mediaFiap > 5));
+
+
+    </script>
+</body>
+</html>
